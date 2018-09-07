@@ -1,6 +1,6 @@
 //
-//  CompareTheMarketTests.swift
-//  CompareTheMarketTests
+//  BookAnalyzerTests.swift
+//  CompareTheMarketCoreTests
 //
 //  Created by Alexandre Freire on 07/09/2018.
 //  Copyright © 2018 Alexandre Freire. All rights reserved.
@@ -8,7 +8,7 @@
 
 import XCTest
 
-class CompareTheMarketTests: XCTestCase {
+class BookAnalyzerTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
