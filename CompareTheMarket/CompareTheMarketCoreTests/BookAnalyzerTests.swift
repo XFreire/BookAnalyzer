@@ -7,27 +7,66 @@
 //
 
 import XCTest
+@testable import CompareTheMarketCore
 
 class BookAnalyzerTests: XCTestCase {
 
+    var analyzer: BookAnalyzerProtocol!
+    var loremBook: Book!
+    
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        analyzer = BookAnalyzer()
+        loremBook = Book(text: """
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+            
+            "Lorem" ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede.
+
+            Pede pede PeDe PEDE "Pede" -Pede.
+        """)
     }
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testBookAnalyzerExistence() {
+        XCTAssertNotNil(analyzer)
+    }
+    
+    func testBookAnalyzer_AnalyzeBook_ReturnsTheCorrectCountOfWords() {
+        // Given a book
+        
+        // When
+        analyzer.analyze(book: loremBook)
+        
+        // Then
+        XCTAssertEqual(analyzer.totalWordsCount, 29)
+        
+    }
+    
+    func testBookAnalyzer_AnalyzeBook_ReturnsTheCorrectNumberOfSpecificWord() {
+        // Given a book
+        
+        // When analyzes a book
+        analyzer.analyze(book: loremBook)
+        
+        // Then
+        XCTAssertEqual(analyzer.count(of: "Lorem"), 3)
+        XCTAssertEqual(analyzer.count(of: "lorem"), 3)
+        XCTAssertEqual(analyzer.count(of: "pede"), 9)
     }
 
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testBookAnalyzer_AnalyzeBook_ReturnsWordsSortedAlphabetically() {
+        // Given a book
+        
+        // When analyzes a book
+        analyzer.analyze(book: loremBook)
+        
+        // Then
+        XCTAssertEqual(analyzer.word(at: 0), "a")
+        XCTAssertEqual(analyzer.word(at: 28), "volutpat")
+        XCTAssertNil(analyzer.word(at: 29))
     }
-
 }

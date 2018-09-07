@@ -7,16 +7,26 @@
 //
 
 import Foundation
+
 final class DummyClass {}
 
 struct Book {
+    
+    // Mark: - Properties
     let text: String
     
-    init?(fileName: String) {
+    // Mark: - Properties
+    init(text: String) {
+        self.text = text
+    }
+    
+    init?(fileName: String = "book", ofType typeName: String = "txt") {
+        
         let dummy = DummyClass()
+        
         let bundle = Bundle(for: type(of: dummy))
         
-        guard let filepath = bundle.path(forResource: "book", ofType: "txt"),
+        guard let filepath = bundle.path(forResource: fileName, ofType: typeName),
         let text = try? String(contentsOfFile: filepath) else {
             return nil
         }

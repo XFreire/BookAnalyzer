@@ -7,12 +7,14 @@
 //
 
 import XCTest
-@testable import Core
+@testable import CompareTheMarketCore
 
 class BookTests: XCTestCase {
 
+    var book: Book!
+    
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        book = Book()
     }
 
     override func tearDown() {
@@ -20,8 +22,11 @@ class BookTests: XCTestCase {
     }
 
     func testBookExistence() {
-        let book = Book(fileName: "book.txt")
         XCTAssertNotNil(book)
+    }
+    
+    func testBookHasText() {
+        XCTAssertGreaterThan(book.text.count, 0)
     }
 
 }

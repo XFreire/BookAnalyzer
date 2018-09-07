@@ -10,7 +10,25 @@
 		4B64FEB82142835F000B1086 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B64FEB72142835F000B1086 /* AppDelegate.swift */; };
 		4B64FEBF21428360000B1086 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4B64FEBE21428360000B1086 /* Assets.xcassets */; };
 		4B64FEC221428360000B1086 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B64FEC021428360000B1086 /* LaunchScreen.storyboard */; };
-		4B64FECD21428360000B1086 /* CompareTheMarketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B64FECC21428360000B1086 /* CompareTheMarketTests.swift */; };
+		4B64FF5C214289BA000B1086 /* CompareTheMarketCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B64FF53214289B9000B1086 /* CompareTheMarketCore.framework */; };
+		4B64FF65214289BA000B1086 /* CompareTheMarketCore.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B64FF55214289B9000B1086 /* CompareTheMarketCore.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B64FF68214289BA000B1086 /* CompareTheMarketCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B64FF53214289B9000B1086 /* CompareTheMarketCore.framework */; };
+		4B64FF69214289BA000B1086 /* CompareTheMarketCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4B64FF53214289B9000B1086 /* CompareTheMarketCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4B64FF70214289C3000B1086 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B64FEDB21428470000B1086 /* Book.swift */; };
+		4B64FF72214289D3000B1086 /* BookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B64FED7214283AD000B1086 /* BookTests.swift */; };
+		4B64FF7421428A0D000B1086 /* CompareTheMarketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B64FF7321428A0D000B1086 /* CompareTheMarketTests.swift */; };
+		4B64FF7821428BB9000B1086 /* book.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4B64FF7721428BB9000B1086 /* book.txt */; };
+		4B64FF7A21428C59000B1086 /* BookAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B64FF7921428C59000B1086 /* BookAnalyzer.swift */; };
+		4B64FF7C21428EEB000B1086 /* BookAnalyzerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B64FF7B21428EEB000B1086 /* BookAnalyzerTests.swift */; };
+		4B64FF812142950D000B1086 /* WordListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B64FF7F2142950D000B1086 /* WordListViewController.swift */; };
+		4B64FF822142950D000B1086 /* WordListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B64FF802142950D000B1086 /* WordListViewController.xib */; };
+		4B64FF8721429582000B1086 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B64FF8521429582000B1086 /* ReusableView.swift */; };
+		4B64FF8821429582000B1086 /* UITableView+Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B64FF8621429582000B1086 /* UITableView+Reusable.swift */; };
+		4B64FF8B21429626000B1086 /* WordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B64FF8921429626000B1086 /* WordCell.swift */; };
+		4B64FF8C21429626000B1086 /* WordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4B64FF8A21429626000B1086 /* WordCell.xib */; };
+		4B64FF8E2142963F000B1086 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B64FF8D2142963F000B1086 /* NibLoadableView.swift */; };
+		4B64FF902142973C000B1086 /* WordListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B64FF8F2142973C000B1086 /* WordListViewModel.swift */; };
+		4B64FF9221429941000B1086 /* WordCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B64FF9121429941000B1086 /* WordCellPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -21,7 +39,42 @@
 			remoteGlobalIDString = 4B64FEB32142835F000B1086;
 			remoteInfo = CompareTheMarket;
 		};
+		4B64FF5D214289BA000B1086 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B64FEAC2142835F000B1086 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B64FF52214289B9000B1086;
+			remoteInfo = CompareTheMarketCore;
+		};
+		4B64FF5F214289BA000B1086 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B64FEAC2142835F000B1086 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B64FEB32142835F000B1086;
+			remoteInfo = CompareTheMarket;
+		};
+		4B64FF66214289BA000B1086 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B64FEAC2142835F000B1086 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B64FF52214289B9000B1086;
+			remoteInfo = CompareTheMarketCore;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4B64FEFE214286C2000B1086 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4B64FF69214289BA000B1086 /* CompareTheMarketCore.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4B64FEB42142835F000B1086 /* CompareTheMarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompareTheMarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -30,8 +83,27 @@
 		4B64FEC121428360000B1086 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4B64FEC321428360000B1086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B64FEC821428360000B1086 /* CompareTheMarketTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CompareTheMarketTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B64FECC21428360000B1086 /* CompareTheMarketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareTheMarketTests.swift; sourceTree = "<group>"; };
 		4B64FECE21428360000B1086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B64FED7214283AD000B1086 /* BookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookTests.swift; sourceTree = "<group>"; };
+		4B64FEDB21428470000B1086 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		4B64FF53214289B9000B1086 /* CompareTheMarketCore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CompareTheMarketCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B64FF55214289B9000B1086 /* CompareTheMarketCore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CompareTheMarketCore.h; sourceTree = "<group>"; };
+		4B64FF56214289B9000B1086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B64FF5B214289BA000B1086 /* CompareTheMarketCoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CompareTheMarketCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B64FF64214289BA000B1086 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B64FF7321428A0D000B1086 /* CompareTheMarketTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareTheMarketTests.swift; sourceTree = "<group>"; };
+		4B64FF7721428BB9000B1086 /* book.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = book.txt; sourceTree = "<group>"; };
+		4B64FF7921428C59000B1086 /* BookAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAnalyzer.swift; sourceTree = "<group>"; };
+		4B64FF7B21428EEB000B1086 /* BookAnalyzerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAnalyzerTests.swift; sourceTree = "<group>"; };
+		4B64FF7F2142950D000B1086 /* WordListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListViewController.swift; sourceTree = "<group>"; };
+		4B64FF802142950D000B1086 /* WordListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordListViewController.xib; sourceTree = "<group>"; };
+		4B64FF8521429582000B1086 /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
+		4B64FF8621429582000B1086 /* UITableView+Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Reusable.swift"; sourceTree = "<group>"; };
+		4B64FF8921429626000B1086 /* WordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCell.swift; sourceTree = "<group>"; };
+		4B64FF8A21429626000B1086 /* WordCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WordCell.xib; sourceTree = "<group>"; };
+		4B64FF8D2142963F000B1086 /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
+		4B64FF8F2142973C000B1086 /* WordListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListViewModel.swift; sourceTree = "<group>"; };
+		4B64FF9121429941000B1086 /* WordCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCellPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +111,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B64FF68214289BA000B1086 /* CompareTheMarketCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +119,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B64FF50214289B9000B1086 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B64FF58214289BA000B1086 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B64FF5C214289BA000B1086 /* CompareTheMarketCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +145,8 @@
 			children = (
 				4B64FEB62142835F000B1086 /* CompareTheMarket */,
 				4B64FECB21428360000B1086 /* CompareTheMarketTests */,
+				4B64FF54214289B9000B1086 /* CompareTheMarketCore */,
+				4B64FF61214289BA000B1086 /* CompareTheMarketCoreTests */,
 				4B64FEB52142835F000B1086 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -66,6 +156,8 @@
 			children = (
 				4B64FEB42142835F000B1086 /* CompareTheMarket.app */,
 				4B64FEC821428360000B1086 /* CompareTheMarketTests.xctest */,
+				4B64FF53214289B9000B1086 /* CompareTheMarketCore.framework */,
+				4B64FF5B214289BA000B1086 /* CompareTheMarketCoreTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,13 +176,103 @@
 		4B64FECB21428360000B1086 /* CompareTheMarketTests */ = {
 			isa = PBXGroup;
 			children = (
-				4B64FECC21428360000B1086 /* CompareTheMarketTests.swift */,
 				4B64FECE21428360000B1086 /* Info.plist */,
+				4B64FF7321428A0D000B1086 /* CompareTheMarketTests.swift */,
 			);
 			path = CompareTheMarketTests;
 			sourceTree = "<group>";
 		};
+		4B64FF54214289B9000B1086 /* CompareTheMarketCore */ = {
+			isa = PBXGroup;
+			children = (
+				4B64FF7921428C59000B1086 /* BookAnalyzer.swift */,
+				4B64FF7D214294F0000B1086 /* WordList */,
+				4B64FF7521428AE6000B1086 /* Resources */,
+				4B64FF832142952E000B1086 /* Common */,
+				4B64FF55214289B9000B1086 /* CompareTheMarketCore.h */,
+				4B64FF56214289B9000B1086 /* Info.plist */,
+			);
+			path = CompareTheMarketCore;
+			sourceTree = "<group>";
+		};
+		4B64FF61214289BA000B1086 /* CompareTheMarketCoreTests */ = {
+			isa = PBXGroup;
+			children = (
+				4B64FED7214283AD000B1086 /* BookTests.swift */,
+				4B64FF7B21428EEB000B1086 /* BookAnalyzerTests.swift */,
+				4B64FF64214289BA000B1086 /* Info.plist */,
+			);
+			path = CompareTheMarketCoreTests;
+			sourceTree = "<group>";
+		};
+		4B64FF7521428AE6000B1086 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4B64FF7721428BB9000B1086 /* book.txt */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4B64FF7621428AEE000B1086 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				4B64FEDB21428470000B1086 /* Book.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		4B64FF7D214294F0000B1086 /* WordList */ = {
+			isa = PBXGroup;
+			children = (
+				4B64FF7E214294FE000B1086 /* Presentation */,
+			);
+			path = WordList;
+			sourceTree = "<group>";
+		};
+		4B64FF7E214294FE000B1086 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				4B64FF7F2142950D000B1086 /* WordListViewController.swift */,
+				4B64FF802142950D000B1086 /* WordListViewController.xib */,
+				4B64FF8921429626000B1086 /* WordCell.swift */,
+				4B64FF8A21429626000B1086 /* WordCell.xib */,
+				4B64FF8F2142973C000B1086 /* WordListViewModel.swift */,
+				4B64FF9121429941000B1086 /* WordCellPresenter.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		4B64FF832142952E000B1086 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4B64FF7621428AEE000B1086 /* Domain */,
+				4B64FF842142953A000B1086 /* Utils */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		4B64FF842142953A000B1086 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4B64FF8D2142963F000B1086 /* NibLoadableView.swift */,
+				4B64FF8521429582000B1086 /* ReusableView.swift */,
+				4B64FF8621429582000B1086 /* UITableView+Reusable.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4B64FF4E214289B9000B1086 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B64FF65214289BA000B1086 /* CompareTheMarketCore.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		4B64FEB32142835F000B1086 /* CompareTheMarket */ = {
@@ -100,10 +282,12 @@
 				4B64FEB02142835F000B1086 /* Sources */,
 				4B64FEB12142835F000B1086 /* Frameworks */,
 				4B64FEB22142835F000B1086 /* Resources */,
+				4B64FEFE214286C2000B1086 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4B64FF67214289BA000B1086 /* PBXTargetDependency */,
 			);
 			name = CompareTheMarket;
 			productName = CompareTheMarket;
@@ -128,6 +312,43 @@
 			productReference = 4B64FEC821428360000B1086 /* CompareTheMarketTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		4B64FF52214289B9000B1086 /* CompareTheMarketCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B64FF6A214289BA000B1086 /* Build configuration list for PBXNativeTarget "CompareTheMarketCore" */;
+			buildPhases = (
+				4B64FF4E214289B9000B1086 /* Headers */,
+				4B64FF4F214289B9000B1086 /* Sources */,
+				4B64FF50214289B9000B1086 /* Frameworks */,
+				4B64FF51214289B9000B1086 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CompareTheMarketCore;
+			productName = CompareTheMarketCore;
+			productReference = 4B64FF53214289B9000B1086 /* CompareTheMarketCore.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4B64FF5A214289BA000B1086 /* CompareTheMarketCoreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B64FF6D214289BA000B1086 /* Build configuration list for PBXNativeTarget "CompareTheMarketCoreTests" */;
+			buildPhases = (
+				4B64FF57214289BA000B1086 /* Sources */,
+				4B64FF58214289BA000B1086 /* Frameworks */,
+				4B64FF59214289BA000B1086 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B64FF5E214289BA000B1086 /* PBXTargetDependency */,
+				4B64FF60214289BA000B1086 /* PBXTargetDependency */,
+			);
+			name = CompareTheMarketCoreTests;
+			productName = CompareTheMarketCoreTests;
+			productReference = 4B64FF5B214289BA000B1086 /* CompareTheMarketCoreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -142,6 +363,14 @@
 						CreatedOnToolsVersion = 10.0;
 					};
 					4B64FEC721428360000B1086 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
+						TestTargetID = 4B64FEB32142835F000B1086;
+					};
+					4B64FF52214289B9000B1086 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					4B64FF5A214289BA000B1086 = {
 						CreatedOnToolsVersion = 10.0;
 						TestTargetID = 4B64FEB32142835F000B1086;
 					};
@@ -162,6 +391,8 @@
 			targets = (
 				4B64FEB32142835F000B1086 /* CompareTheMarket */,
 				4B64FEC721428360000B1086 /* CompareTheMarketTests */,
+				4B64FF52214289B9000B1086 /* CompareTheMarketCore */,
+				4B64FF5A214289BA000B1086 /* CompareTheMarketCoreTests */,
 			);
 		};
 /* End PBXProject section */
@@ -183,6 +414,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4B64FF51214289B9000B1086 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B64FF822142950D000B1086 /* WordListViewController.xib in Resources */,
+				4B64FF8C21429626000B1086 /* WordCell.xib in Resources */,
+				4B64FF7821428BB9000B1086 /* book.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B64FF59214289BA000B1086 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -198,7 +446,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B64FECD21428360000B1086 /* CompareTheMarketTests.swift in Sources */,
+				4B64FF7421428A0D000B1086 /* CompareTheMarketTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B64FF4F214289B9000B1086 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B64FF8821429582000B1086 /* UITableView+Reusable.swift in Sources */,
+				4B64FF7A21428C59000B1086 /* BookAnalyzer.swift in Sources */,
+				4B64FF8E2142963F000B1086 /* NibLoadableView.swift in Sources */,
+				4B64FF70214289C3000B1086 /* Book.swift in Sources */,
+				4B64FF902142973C000B1086 /* WordListViewModel.swift in Sources */,
+				4B64FF8B21429626000B1086 /* WordCell.swift in Sources */,
+				4B64FF812142950D000B1086 /* WordListViewController.swift in Sources */,
+				4B64FF9221429941000B1086 /* WordCellPresenter.swift in Sources */,
+				4B64FF8721429582000B1086 /* ReusableView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B64FF57214289BA000B1086 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B64FF7C21428EEB000B1086 /* BookAnalyzerTests.swift in Sources */,
+				4B64FF72214289D3000B1086 /* BookTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +482,21 @@
 			isa = PBXTargetDependency;
 			target = 4B64FEB32142835F000B1086 /* CompareTheMarket */;
 			targetProxy = 4B64FEC921428360000B1086 /* PBXContainerItemProxy */;
+		};
+		4B64FF5E214289BA000B1086 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B64FF52214289B9000B1086 /* CompareTheMarketCore */;
+			targetProxy = 4B64FF5D214289BA000B1086 /* PBXContainerItemProxy */;
+		};
+		4B64FF60214289BA000B1086 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B64FEB32142835F000B1086 /* CompareTheMarket */;
+			targetProxy = 4B64FF5F214289BA000B1086 /* PBXContainerItemProxy */;
+		};
+		4B64FF67214289BA000B1086 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B64FF52214289B9000B1086 /* CompareTheMarketCore */;
+			targetProxy = 4B64FF66214289BA000B1086 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -343,6 +631,7 @@
 		4B64FED221428360000B1086 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8LNA9LB2Y8;
@@ -361,6 +650,7 @@
 		4B64FED321428360000B1086 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8LNA9LB2Y8;
@@ -381,6 +671,30 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8LNA9LB2Y8;
+				INFOPLIST_FILE = CompareTheMarketTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexandrefreire.CompareTheMarketTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CompareTheMarket.app/CompareTheMarket";
+			};
+			name = Debug;
+		};
+		4B64FED621428360000B1086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8LNA9LB2Y8;
 				INFOPLIST_FILE = CompareTheMarketTests/Info.plist;
@@ -395,22 +709,97 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CompareTheMarket.app/CompareTheMarket";
 			};
-			name = Debug;
+			name = Release;
 		};
-		4B64FED621428360000B1086 /* Release */ = {
+		4B64FF6B214289BA000B1086 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 8LNA9LB2Y8;
-				INFOPLIST_FILE = CompareTheMarketTests/Info.plist;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CompareTheMarketCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.alexandrefreire.CompareTheMarketTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexandrefreire.CompareTheMarketCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4B64FF6C214289BA000B1086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8LNA9LB2Y8;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CompareTheMarketCore/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexandrefreire.CompareTheMarketCore;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4B64FF6E214289BA000B1086 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8LNA9LB2Y8;
+				INFOPLIST_FILE = CompareTheMarketCoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexandrefreire.CompareTheMarketCoreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CompareTheMarket.app/CompareTheMarket";
+			};
+			name = Debug;
+		};
+		4B64FF6F214289BA000B1086 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8LNA9LB2Y8;
+				INFOPLIST_FILE = CompareTheMarketCoreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.alexandrefreire.CompareTheMarketCoreTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -444,6 +833,24 @@
 			buildConfigurations = (
 				4B64FED521428360000B1086 /* Debug */,
 				4B64FED621428360000B1086 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B64FF6A214289BA000B1086 /* Build configuration list for PBXNativeTarget "CompareTheMarketCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B64FF6B214289BA000B1086 /* Debug */,
+				4B64FF6C214289BA000B1086 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B64FF6D214289BA000B1086 /* Build configuration list for PBXNativeTarget "CompareTheMarketCoreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B64FF6E214289BA000B1086 /* Debug */,
+				4B64FF6F214289BA000B1086 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
