@@ -9,11 +9,14 @@
 import UIKit
 
 class WordListViewController: UIViewController {
-
+    enum Constants {
+        static let rowHeight: CGFloat = 65
+    }
     // Mark: - Outlets
     @IBOutlet weak var tableView: UITableView! {
         didSet {
             tableView.register(WordCell.self)
+            tableView.rowHeight = Constants.rowHeight
         }
     }
     
@@ -26,6 +29,7 @@ class WordListViewController: UIViewController {
         self.viewModel = viewModel
         self.cellPresenter = cellPresenter
         super.init(nibName: nil, bundle: Bundle(for: type(of: self)))
+        title = "List of words"
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -34,6 +38,7 @@ class WordListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.dataSource = self
         viewModel.didLoad { [weak self] in
             guard let `self` = self else { return }
             self.tableView.reloadData()

@@ -8,7 +8,7 @@
 
 import Foundation
 
-typealias Item = (word: Word, count: Int)
+typealias Item = (word: Word, count: Int, isPrime: Bool)
 
 protocol WordListViewModelProtocol {
     var count: Int { get }
@@ -43,7 +43,7 @@ final class WordListViewModel: WordListViewModelProtocol {
     func item(at index: Int) -> Item? {
         guard let word = analyzer.word(at: index) else { return nil }
         let count = analyzer.count(of: word)
-        let item = (word, count)
+        let item = (word, count, count.isPrime)
         
         return item
     }

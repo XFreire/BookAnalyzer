@@ -12,4 +12,9 @@ final class WordCell: UITableViewCell, ReusableView, NibLoadableView {
 
     @IBOutlet weak var wordLabel: UILabel!
     @IBOutlet weak var countLabel: UILabel!
+    @IBOutlet weak var isPrimeLabel: UILabel! {
+        didSet {
+            isPrimeLabel.textColor = .red
+        }
+    }
 }

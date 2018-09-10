@@ -10,7 +10,14 @@ import Foundation
 
 final class WordCellPresenter {
     func present(_ item: Item, in cell: WordCell) {
-        cell.wordLabel.text = item.word
-        cell.countLabel.text = "\(item.count)"
+        cell.wordLabel.text = """
+        "\(item.word)"
+        """
+        
+        let times = item.count > 1 ? "times" : "time"
+        cell.countLabel.text = "Appears \(item.count) \(times)"
+        
+        cell.isPrimeLabel.text = item.isPrime ? "(prime)" : ""
+        
     }
 }

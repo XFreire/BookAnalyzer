@@ -29,6 +29,13 @@
 		4B64FF8E2142963F000B1086 /* NibLoadableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B64FF8D2142963F000B1086 /* NibLoadableView.swift */; };
 		4B64FF902142973C000B1086 /* WordListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B64FF8F2142973C000B1086 /* WordListViewModel.swift */; };
 		4B64FF9221429941000B1086 /* WordCellPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B64FF9121429941000B1086 /* WordCellPresenter.swift */; };
+		4B64FF9521429B24000B1086 /* WordListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B64FF9421429B24000B1086 /* WordListAssembly.swift */; };
+		4B64FF9821429B90000B1086 /* CoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B64FF9721429B90000B1086 /* CoreAssembly.swift */; };
+		4B64FF9A21429BCE000B1086 /* AppAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B64FF9921429BCE000B1086 /* AppAssembly.swift */; };
+		4B64FF9C214648DE000B1086 /* Int+Prime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B64FF9B214648DE000B1086 /* Int+Prime.swift */; };
+		4B64FFA02146496D000B1086 /* IntPrimeExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B64FF9F2146496D000B1086 /* IntPrimeExtensionTests.swift */; };
+		4B64FFA3214649D3000B1086 /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B64FFA2214649D3000B1086 /* MockData.swift */; };
+		4B64FFA521464EEF000B1086 /* WordListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B64FFA421464EEF000B1086 /* WordListViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +111,13 @@
 		4B64FF8D2142963F000B1086 /* NibLoadableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadableView.swift; sourceTree = "<group>"; };
 		4B64FF8F2142973C000B1086 /* WordListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListViewModel.swift; sourceTree = "<group>"; };
 		4B64FF9121429941000B1086 /* WordCellPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordCellPresenter.swift; sourceTree = "<group>"; };
+		4B64FF9421429B24000B1086 /* WordListAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListAssembly.swift; sourceTree = "<group>"; };
+		4B64FF9721429B90000B1086 /* CoreAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAssembly.swift; sourceTree = "<group>"; };
+		4B64FF9921429BCE000B1086 /* AppAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAssembly.swift; sourceTree = "<group>"; };
+		4B64FF9B214648DE000B1086 /* Int+Prime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+Prime.swift"; sourceTree = "<group>"; };
+		4B64FF9F2146496D000B1086 /* IntPrimeExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntPrimeExtensionTests.swift; sourceTree = "<group>"; };
+		4B64FFA2214649D3000B1086 /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
+		4B64FFA421464EEF000B1086 /* WordListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordListViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				4B64FEB72142835F000B1086 /* AppDelegate.swift */,
+				4B64FF9921429BCE000B1086 /* AppAssembly.swift */,
 				4B64FEBE21428360000B1086 /* Assets.xcassets */,
 				4B64FEC021428360000B1086 /* LaunchScreen.storyboard */,
 				4B64FEC321428360000B1086 /* Info.plist */,
@@ -185,6 +200,7 @@
 		4B64FF54214289B9000B1086 /* CompareTheMarketCore */ = {
 			isa = PBXGroup;
 			children = (
+				4B64FF9621429B88000B1086 /* DI */,
 				4B64FF7921428C59000B1086 /* BookAnalyzer.swift */,
 				4B64FF7D214294F0000B1086 /* WordList */,
 				4B64FF7521428AE6000B1086 /* Resources */,
@@ -198,8 +214,11 @@
 		4B64FF61214289BA000B1086 /* CompareTheMarketCoreTests */ = {
 			isa = PBXGroup;
 			children = (
+				4B64FFA1214649C9000B1086 /* Data */,
 				4B64FED7214283AD000B1086 /* BookTests.swift */,
+				4B64FF9F2146496D000B1086 /* IntPrimeExtensionTests.swift */,
 				4B64FF7B21428EEB000B1086 /* BookAnalyzerTests.swift */,
+				4B64FFA421464EEF000B1086 /* WordListViewModelTests.swift */,
 				4B64FF64214289BA000B1086 /* Info.plist */,
 			);
 			path = CompareTheMarketCoreTests;
@@ -224,6 +243,7 @@
 		4B64FF7D214294F0000B1086 /* WordList */ = {
 			isa = PBXGroup;
 			children = (
+				4B64FF9321429B0D000B1086 /* DI */,
 				4B64FF7E214294FE000B1086 /* Presentation */,
 			);
 			path = WordList;
@@ -254,11 +274,36 @@
 		4B64FF842142953A000B1086 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				4B64FF9B214648DE000B1086 /* Int+Prime.swift */,
 				4B64FF8D2142963F000B1086 /* NibLoadableView.swift */,
 				4B64FF8521429582000B1086 /* ReusableView.swift */,
 				4B64FF8621429582000B1086 /* UITableView+Reusable.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		4B64FF9321429B0D000B1086 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				4B64FF9421429B24000B1086 /* WordListAssembly.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		4B64FF9621429B88000B1086 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				4B64FF9721429B90000B1086 /* CoreAssembly.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+		4B64FFA1214649C9000B1086 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				4B64FFA2214649D3000B1086 /* MockData.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -439,6 +484,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B64FEB82142835F000B1086 /* AppDelegate.swift in Sources */,
+				4B64FF9A21429BCE000B1086 /* AppAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,13 +500,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B64FF9821429B90000B1086 /* CoreAssembly.swift in Sources */,
 				4B64FF8821429582000B1086 /* UITableView+Reusable.swift in Sources */,
 				4B64FF7A21428C59000B1086 /* BookAnalyzer.swift in Sources */,
 				4B64FF8E2142963F000B1086 /* NibLoadableView.swift in Sources */,
+				4B64FF9521429B24000B1086 /* WordListAssembly.swift in Sources */,
 				4B64FF70214289C3000B1086 /* Book.swift in Sources */,
 				4B64FF902142973C000B1086 /* WordListViewModel.swift in Sources */,
 				4B64FF8B21429626000B1086 /* WordCell.swift in Sources */,
 				4B64FF812142950D000B1086 /* WordListViewController.swift in Sources */,
+				4B64FF9C214648DE000B1086 /* Int+Prime.swift in Sources */,
 				4B64FF9221429941000B1086 /* WordCellPresenter.swift in Sources */,
 				4B64FF8721429582000B1086 /* ReusableView.swift in Sources */,
 			);
@@ -470,8 +519,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B64FFA02146496D000B1086 /* IntPrimeExtensionTests.swift in Sources */,
 				4B64FF7C21428EEB000B1086 /* BookAnalyzerTests.swift in Sources */,
 				4B64FF72214289D3000B1086 /* BookTests.swift in Sources */,
+				4B64FFA3214649D3000B1086 /* MockData.swift in Sources */,
+				4B64FFA521464EEF000B1086 /* WordListViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
