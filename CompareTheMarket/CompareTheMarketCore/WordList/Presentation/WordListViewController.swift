@@ -13,6 +13,7 @@ class WordListViewController: UIViewController {
         static let rowHeight: CGFloat = 65
     }
     // Mark: - Outlets
+    @IBOutlet weak var loading: UIActivityIndicatorView!
     @IBOutlet weak var tableView: UITableView! {
         didSet {
             tableView.register(WordCell.self)
@@ -42,6 +43,7 @@ class WordListViewController: UIViewController {
         viewModel.didLoad { [weak self] in
             guard let `self` = self else { return }
             self.tableView.reloadData()
+            self.loading.stopAnimating()
         }
     }
 }
